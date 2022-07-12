@@ -1,4 +1,3 @@
-import { RouteConfig } from "react-router-config";
 import { Navigate, useRoutes } from "react-router-dom";
 
 import Login from "@/views/Login";

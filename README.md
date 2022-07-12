@@ -1,0 +1,1 @@
+react-router-config 已不支持react-router-dom6
