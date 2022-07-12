@@ -5,22 +5,22 @@ import Home from "@/views/Home";
 
 // 定义一个数组为RouterConfig接口的数组
 const Routers = [
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/home",
-    element: <Home />,
-  },
-  {
-    path: "*",
-    element: <Navigate to="/home" />,
-  },
+	{
+		path: "/login",
+		element: <Login />
+	},
+	{
+		path: "/home",
+		element: <Home />
+	},
+	{
+		path: "*",
+		element: <Navigate to="/home" />
+	}
 ];
 const Router = () => {
-  const routes = useRoutes(Routers);
-  return routes;
+	const routes = useRoutes(Routers);
+	return routes;
 };
 
 export default Router;
