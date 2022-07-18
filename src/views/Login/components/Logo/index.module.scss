@@ -1,0 +1,51 @@
+.logo {
+	flex: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.logo__bg {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background: #f13b30;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
+
+	.logo__bg::after,
+	.logo__bg::before {
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border: 2px solid #f54060;
+		display: block;
+		border-radius: 50%;
+		animation: ripple 3s linear 0s infinite;
+	}
+	.logo__bg::after {
+		animation-delay: 0s;
+	}
+	.logo__bg::before {
+		animation-delay: 1s;
+	}
+	.logo__img {
+		width: 70px;
+		height: 70px;
+	}
+	@keyframes ripple {
+		0% {
+			width: 100px;
+			height: 100px;
+			border: 2px solid #f54060;
+		}
+		100% {
+			border: 2px solid #f54060;
+			width: 300px;
+			height: 300px;
+			opacity: 0.1;
+		}
+	}
+}
