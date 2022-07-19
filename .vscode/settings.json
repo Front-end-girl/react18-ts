@@ -1,3 +1,8 @@
 {
-	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "react"]
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "react"],
+	"workbench.colorCustomizations": {
+		"statusBar.background": "#1A1A1A",
+		"statusBar.noFolderBackground": "#0A0A0D",
+		"statusBar.debuggingBackground": "#511f1f"
+	}
 }
