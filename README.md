@@ -42,3 +42,5 @@ module.exports = {
     ]
   }
 ```
+1. react-transition-group 动画 配合router
+2. 动画插件 https://github.com/qiqiboy/react-animated-router

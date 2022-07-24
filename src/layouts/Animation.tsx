@@ -1,17 +1,12 @@
-import React, { useEffect } from "react";
-import { Outlet, useLocation } from "react-router-dom";
-const list: any = [];
+import React from "react";
+import { Outlet } from "react-router-dom";
+import { AnimatedRoutes } from "react-animated-router";
+
 const AnimationLayout: React.FC = () => {
-	const navigator = useLocation();
-	useEffect(() => {
-		console.log([...list]);
-		list.push(navigator.pathname);
-		console.log(navigator, new Date().getTime());
-	});
 	return (
-		<>
+		<AnimatedRoutes>
 			<Outlet></Outlet>
-		</>
+		</AnimatedRoutes>
 	);
 };
 export default AnimationLayout;

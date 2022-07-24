@@ -1,31 +1,28 @@
-import { Navigate, useRoutes } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import { useAnimatedRoutes } from "react-animated-router";
 
 import Login from "@/views/Login";
 import Home from "@/views/Home";
-import AnimationLayout from "@/layouts/Animation";
+
+// import AnimationLayout from "@/layouts/Animation";
 
 // 定义一个数组为RouterConfig接口的数组
 const Routers = [
 	{
-		element: <AnimationLayout />,
-		children: [
-			{
-				path: "/login",
-				element: <Login />
-			},
-			{
-				path: "/home",
-				element: <Home />
-			},
-			{
-				path: "*",
-				element: <Navigate to="/login" />
-			}
-		]
+		path: "/login",
+		element: <Login />
+	},
+	{
+		path: "/home",
+		element: <Home />
+	},
+	{
+		path: "*",
+		element: <Navigate to="/login" />
 	}
 ];
 const Router = () => {
-	const routes = useRoutes(Routers);
+	const routes = useAnimatedRoutes(Routers);
 	return routes;
 };
 
