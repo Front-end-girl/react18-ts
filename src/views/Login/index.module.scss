@@ -4,5 +4,12 @@
 	background-color: #e82101;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
+
+.square{
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
